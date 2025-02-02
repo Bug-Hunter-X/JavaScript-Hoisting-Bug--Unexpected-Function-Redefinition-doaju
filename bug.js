@@ -1,0 +1,3 @@
+function foo(a,b){return a+b;}console.log(foo(1,2)); //3
+function foo(a,b){return a-b;}console.log(foo(1,2)); //-1
+This is a simple example of a bug that can happen because of hoisting. In JavaScript, function declarations are hoisted, which means that they are moved to the top of their scope before the code is executed. However, function expressions are not hoisted. In the above example, the first function declaration is hoisted, so the first call to foo() works as expected. However, the second function expression is not hoisted, so the second call to foo() results in an error.
